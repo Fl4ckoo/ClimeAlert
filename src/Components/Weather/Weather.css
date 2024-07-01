@@ -1,0 +1,146 @@
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-content input[type="text"]{
+    padding: 12px;
+    margin: 12px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: aqua;
+    width: 400px;
+    border: 2px solid;
+}
+
+
+
+
+
+.form-content input[type="text"]:focus{
+    outline: none;
+}
+
+.form-content input[type="text"]::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+    opacity: 15%;
+}
+
+.form-content button { 
+    color: aqua;
+    margin: 12px auto;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 1;
+    background-color: #262525;
+}
+
+.form-content button:hover {
+    background-color: #3c3a3a;
+} 
+
+.weather-info {
+    text-align: center;
+    color: aqua;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-info button{
+    padding: 8px;
+    color: aqua;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+
+.weather-info button:hover{
+    background-color: #3c3a3a;
+}
+
+
+
+
+  .weather-info-card {
+    background: #262525;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .button-container button{
+    padding: 8px;
+    color: aqua;
+    border: 2px solid;
+    cursor: pointer;
+    margin: 12px auto;
+  }
+
+  .button-container button:hover{
+    background-color: #3c3a3a;
+  }
+
+
+  .input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container input {
+    width: 400px; /* Adjust as needed */
+}
+
+.history-dropdown {
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    border: 1px solid aqua;
+    color: aqua;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.history-dropdown li:first-child{
+    border-top:none ;
+}
+
+.history-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+    border-top: 2px solid aqua;
+}
+
+.history-dropdown li:hover {
+    background-color: #3c3a3a;
+}

@@ -1,0 +1,17 @@
+.custom-toast {
+    background-color: #262525;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.custom-toast-body {
+    display: flex;
+    align-items: center;
+    color: aqua;
+}
+
+.custom-toast-icon {
+    margin-right: 8px;
+    border-color: #262525;
+}

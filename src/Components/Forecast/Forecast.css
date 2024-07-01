@@ -1,0 +1,38 @@
+body{
+    background-color: #262525;
+}
+
+.forecast-info{
+    text-align: center;
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.forecast-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .forecast-card {
+    
+    background: #262525;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .forecast-card p {
+    margin: 5px 5px;
+  }
+
+  .temp-p{
+    font-size: 40px;
+  }

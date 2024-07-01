@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #262525;
+}
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-header {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px auto;
+  color: aqua;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-header a{
+  color: aqua;
+  text-decoration: none;  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: aqua; 
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(60, 156, 156);
+  opacity: 1; 
+}
+
+
+
