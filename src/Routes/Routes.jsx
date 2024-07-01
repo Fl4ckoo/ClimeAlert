@@ -5,12 +5,10 @@ import Forecast from '../../src/Components/Forecast/Forecast.jsx';
 import PrivacyPolicy from '../../src/Components/PrivacyPolicy/PrivacyPolicy.jsx';
 import ContactUs from "../../src/Components/ContactUs/ContactUs.jsx";
 import TermsOfServices from "../../src/Components/TermsOfServices/TermsOfServices.jsx";
+import Error from "../../src/Components/Error/Error.jsx";
 
 const AppRoutes = () => {
-  
-  
-  
-  
+
     return (
     <Router>
         <Routes>
@@ -19,6 +17,7 @@ const AppRoutes = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="terms-of-service" element={<TermsOfServices />} />
+            <Route path="*" element={<Error />}/>
         </Routes>
     </Router>
 );

@@ -1,0 +1,11 @@
+.error-container {
+    color: aqua;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error-container a{
+    color: aqua;
+    text-decoration: none;  
+  }
