@@ -28,8 +28,8 @@ function Weather() {
     }, []);
 
     const apiKey = '6a907db5704dae783d2ef11d471a4dc0';
-    const weatherBaseUrl = 'http://api.openweathermap.org/data/2.5/weather';
-    const forecastBaseUrl = 'http://api.openweathermap.org/data/2.5/forecast';
+    const weatherBaseUrl = 'https://api.openweathermap.org/data/2.5/weather';
+    const forecastBaseUrl = 'https://api.openweathermap.org/data/2.5/forecast';
 
     const handleMoreInfo = () => {
         setIsModalOpen(true);
