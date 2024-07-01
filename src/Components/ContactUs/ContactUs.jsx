@@ -1,18 +1,15 @@
-import React, {useState} from 'react'
-import './ContactUs.css'
+import React, { useState } from 'react';
+import './ContactUs.css';
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import '../../Assets/CSS/Toaststyles.css';
 
 function ContactUs() {
-    
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
-
-  const [error, setError] = useState({});
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().matches(/^[a-zA-Z\s]+$/, 'Invalid name input or Empty'),
@@ -34,17 +31,12 @@ function ContactUs() {
     try {
       await validationSchema.validate(formData, { abortEarly: false });
 
-      
       setFormData({
         name: '',
         email: '',
         message: '',
       });
 
-      
-      setError({});
-
-      
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 5000,
@@ -56,7 +48,7 @@ function ContactUs() {
       const yupErrors = {};
       err.inner.forEach((e) => {
         yupErrors[e.path] = e.message;
-       
+
         toast.error(e.message, {
           position: 'top-right',
           autoClose: 5000,
@@ -65,21 +57,19 @@ function ContactUs() {
           iconClassName: 'custom-toast-icon',
         });
       });
-
-      
-      setError(yupErrors);
     }
   };
 
-
-      
-  
-    return (
+  return (
     <div className='contact-us-container'>
-      <ToastContainer /> 
-        <h2>Contact Us</h2><br/>
-        <p>We'd love to hear from you, Please share your Name , Email and Message you would like to send us
-          and we will get back to you.</p><br/>
+      <ToastContainer />
+      <h2>Contact Us</h2>
+      <br />
+      <p>
+        We'd love to hear from you. Please share your name, email, and message you
+        would like to send us and we will get back to you.
+      </p>
+      <br />
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
           <label htmlFor="name">Name:</label>
@@ -91,9 +81,6 @@ function ContactUs() {
             onChange={handleChange}
             placeholder='Enter your name...'
           />
-        
-
-        
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -103,10 +90,6 @@ function ContactUs() {
             onChange={handleChange}
             placeholder='Enter your Email...'
           />
-          
-        
-
-        
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
@@ -116,11 +99,10 @@ function ContactUs() {
             placeholder='Enter the Message...'
           />
         </div>
-
         <button id='submit-btn' type="submit">Submit</button>
       </form>
     </div>
-  )
+  );
 }
 
-export default ContactUs
+export default ContactUs;
